@@ -1,4 +1,4 @@
-Coursyl
+Coursyl with some jQuery
 =======
 
 Coursyl is a Rails app originally developed to manage <b>cour</b>se <b>syl</b>labi.  Over time, it expanded to include:
