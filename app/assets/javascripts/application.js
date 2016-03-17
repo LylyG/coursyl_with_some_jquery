@@ -13,17 +13,33 @@
 //= require jquery
 //= require jquery_ujs
 //= require d3
+//= require datetimepicker
 //= require_tree .
+
+// function changeDateModal (){
+//   $('#myModal').on("click", 'show');
+//   $(event.target).parent().siblings(".modal").modal('show');
+// };
+
+
+function changeDateModal() {
+  $("#myModal").modal('show');
+};
+
+// function bindUpdateDateButton() {
+//   $(".change-date").on("click", changeDateModal);
+// };
+
 
 
 function disableSubmitButton() {
   $(event.target).prop("disabled", true);
   $(event.target).closest("form").submit();
-}
+};
 
 function bindSubmitClick() {
   $("input[type=submit]").on("click", disableSubmitButton);
-}
+};
 
 $(bindSubmitClick);
 
@@ -33,7 +49,7 @@ function deleteRow() {
   row.css("display", "none");
   var checkbox = $(event.target).siblings().last();
   checkbox.prop("checked", true);
-}
+};
 
 
 function displayGrade(displayType) {
@@ -44,10 +60,10 @@ function displayGrade(displayType) {
   } else {
     last_section.css("display", "none");
   }
-}
+};
 
 function hideLastRow() {
   displayGrade(false);
-}
+};
 
 $(hideLastRow);
