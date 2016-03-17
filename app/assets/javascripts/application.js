@@ -21,14 +21,18 @@
 //   $(event.target).parent().siblings(".modal").modal('show');
 // };
 
+function dateTimePicker() {
+  $('.datetimepicker').datetimepicker();
+}
+$(dateTimePicker);
 
 function changeDateModal() {
   $("#myModal").modal('show');
 };
 
-// function bindUpdateDateButton() {
-//   $(".change-date").on("click", changeDateModal);
-// };
+function bindUpdateDateButton() {
+  $(".change-date").on("click", changeDateModal);
+};
 
 
 
